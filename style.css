@@ -30,3 +30,10 @@ button {
     display: inline-block;
     font-size: 16px;
 }
+
+button:hover {
+    /* Change background color and cursor on hover */
+    background-color: #8d899434; /* Green background */
+    color: white; /* White text */
+    cursor: pointer; /* Crosshair cursor on hover */
+}
