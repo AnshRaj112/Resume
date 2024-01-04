@@ -41,6 +41,34 @@ button:hover {
     p{
        width: 215%;
     }
-    img{
+    hr{
+        width: 215%;
+     }
+}
+/* CSS for text wrapping */
+.wrap {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+/* CSS for different devices */
+@media (min-width:320px) { 
+    /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+    .wrap {
+        font-size: 16px;
+    }
+}
+
+@media (min-width:600px) { 
+    /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+    .wrap {
+        font-size: 18px;
+    }
+}
+
+@media (min-width:801px) { 
+    /* tablet, landscape iPad, lo-res laptops and desktops */
+    .wrap {
+        font-size: 20px;
     }
 }
