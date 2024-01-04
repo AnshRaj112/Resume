@@ -37,3 +37,10 @@ button:hover {
     color: white; /* White text */
     cursor: pointer; /* Crosshair cursor on hover */
 }
+@media(max-width: 680px){
+    p{
+       width: 215%;
+    }
+    img{
+    }
+}
