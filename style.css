@@ -21,7 +21,8 @@
 }
 button {
     background-color: #bab0cc54;
-    border: none;
+    border: 2px solid;
+    border-color: #b894f534;
     border-radius: 5px;
     color: white;
     padding: 5px 15px;
@@ -29,6 +30,7 @@ button {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    transition: color 0.05s, border-color 0.05s, box-shadow 0.05s,transform 0.05s;
 }
 
 button:hover {
@@ -36,39 +38,19 @@ button:hover {
     background-color: #8d899434; /* Green background */
     color: white; /* White text */
     cursor: pointer; /* Crosshair cursor on hover */
+    border-color: #8d8994;
+    box-shadow:  0 0.8em 0.5em -0.4em #5900ffe7;
+    transform: translateY(-0.25em);
 }
-@media(max-width: 680px){
-    p{
-       width: 215%;
-    }
-    hr{
-        width: 215%;
-     }
-}
-/* CSS for text wrapping */
-.wrap {
-    overflow-wrap: break-word;
-    word-wrap: break-word;
+img{
+    transition: color 0.05s, box-shadow 0.05s,transform 0.05s;
 }
 
-/* CSS for different devices */
-@media (min-width:320px) { 
-    /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
-    .wrap {
-        font-size: 16px;
-    }
+img:hover{
+    box-shadow:  0 0.8em 0.5em -0.4em #6a00ffe7;
+    transform: translateY(-0.25em);
 }
-
-@media (min-width:600px) { 
-    /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
-    .wrap {
-        font-size: 18px;
-    }
-}
-
-@media (min-width:801px) { 
-    /* tablet, landscape iPad, lo-res laptops and desktops */
-    .wrap {
-        font-size: 20px;
-    }
+img #main:hover{
+    box-shadow: 0 0.8em 0.5em -0.4em #0022ffe7;
+    transform: translateY(-0.3em);
 }
